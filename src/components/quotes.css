@@ -1,0 +1,62 @@
+@-webkit-keyframes changeboxshadow {
+  0% {
+    box-shadow: 0px 0px 16px -4px rgb(9, 237, 9);
+  }
+  25% {
+    box-shadow: 0px 0px 16px -4px rgb(8, 188, 220);
+  }
+  50% {
+    box-shadow: 0px 0px 16px -4px rgb(240, 134, 12);
+  }
+  75% {
+    box-shadow: 0px 0px 16px -4px rgb(128, 0, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 16px -4px rgb(205, 224, 205);
+  }
+}
+@keyframes changeboxshadow {
+  0% {
+    box-shadow: 0px 0px 16px -4px rgb(9, 237, 9);
+  }
+  25% {
+    box-shadow: 0px 0px 16px -4px rgb(8, 188, 220);
+  }
+  50% {
+    box-shadow: 0px 0px 16px -4px rgb(240, 134, 12);
+  }
+  75% {
+    box-shadow: 0px 0px 16px -4px rgb(128, 0, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 16px -4px rgb(205, 224, 205);
+  }
+}
+.mainrow {
+  background-color: black;
+  height: 100vh;
+  border: 2px solid white;
+}
+.mainrow .mainCol {
+  padding: 10px 10px 0px;
+  -webkit-animation-name: changeboxshadow;
+          animation-name: changeboxshadow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  box-shadow: 0 0 20px -20px white;
+  border-radius: 30px;
+}
+.mainrow .mainCol .headingg {
+  color: rgb(227, 8, 8);
+}
+.mainrow .mainCol .secondRow {
+  margin-top: 30px;
+}
+.mainrow .mainCol .secondRow .subcol {
+  padding: 20px 10px;
+  color: rgb(148, 249, 209);
+}/*# sourceMappingURL=quotes.css.map */

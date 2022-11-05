@@ -1,0 +1,53 @@
+$background:black;
+@mixin boxshadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+$borderRadius:30px;
+@keyframes changeboxshadow {
+    0% {
+        @include boxshadow(0px, 0px, 16px, -4px, rgb(9, 237, 9));
+    }
+    25% {
+        @include boxshadow(0px, 0px, 16px, -4px, rgb(8, 188, 220));
+    }
+    50% {
+        @include boxshadow(0px, 0px, 16px, -4px, rgb(240, 134, 12));
+    }
+    75% {
+        @include boxshadow(0px, 0px, 16px, -4px, rgb(128, 0, 0));
+    }
+    100% {
+        @include boxshadow(0px, 0px, 16px, -4px, rgb(205, 224, 205));
+    }
+}
+
+@mixin anim {
+    animation-name: changeboxshadow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.mainrow {
+    background-color: black;
+    height: 100vh;
+    border: 2px solid white;
+    .mainCol {
+        padding: 10px 10px 0px;
+        @include anim;
+        @include boxshadow(0, 0, 20px, -20px, white);
+        border-radius: $borderRadius;
+        height: 250px;
+        .headingg {
+            color: rgb(227, 8, 8);
+        }
+        .secondRow {
+            margin-top: 30px;
+            .subcol {
+                padding: 20px 10px;
+                color: rgb(8, 249, 153);
+            }
+        }
+    }
+}
