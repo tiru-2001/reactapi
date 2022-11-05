@@ -8,7 +8,7 @@ const Qutecompon = () => {
 useEffect(
     ()=>{
 axios.get(basueur).then((res)=>{setapi(res.data)
-console.log(res.data);}).catch((err)=>{
+}).catch((err)=>{
     console.log(`error is due to promise${err}`);
 })
 },[]
@@ -28,7 +28,7 @@ console.log(apii.quote);
             <div className="row secondRow">
                 <div className="col-md-12 subcol">
                     <h3 className='text-center'>"{apii.quote}"</h3>
-                    <h5 className="text-end">-{apii.author}</h5>
+                    <h5 className="text-end">{apii.author}</h5>
                 </div>
             </div>
         </div>
