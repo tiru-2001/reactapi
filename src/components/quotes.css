@@ -49,14 +49,25 @@
           animation-iteration-count: infinite;
   box-shadow: 0 0 20px -20px white;
   border-radius: 30px;
+  height: 250px;
+}
+@media screen and (max-width: 1000px) {
+  .mainrow .mainCol {
+    height: auto;
+  }
 }
 .mainrow .mainCol .headingg {
   color: rgb(227, 8, 8);
+}
+@media screen and (max-width: 500px) {
+  .mainrow .mainCol .headingg {
+    font-size: 1.5rem;
+  }
 }
 .mainrow .mainCol .secondRow {
   margin-top: 30px;
 }
 .mainrow .mainCol .secondRow .subcol {
   padding: 20px 10px;
-  color: rgb(148, 249, 209);
+  color: rgb(8, 249, 153);
 }/*# sourceMappingURL=quotes.css.map */

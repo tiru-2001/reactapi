@@ -33,20 +33,44 @@ $borderRadius:30px;
     background-color: black;
     height: 100vh;
     border: 2px solid white;
+    @media screen and (max-width: 500px) {
+        padding: 0px 20px;
+    }
     .mainCol {
         padding: 10px 10px 0px;
         @include anim;
         @include boxshadow(0, 0, 20px, -20px, white);
         border-radius: $borderRadius;
-        height: 250px;
+        height: 260px;
+        @media screen and (max-width: 1000px) {
+            height: auto;
+        }
+        @media screen and (max-width: 500px) {
+            // margin: 40px;
+            padding: 20px;
+        }
+        @media screen and (max-width: 250px) {
+            // margin: 40px;
+            padding: 10px;
+        }
         .headingg {
             color: rgb(227, 8, 8);
+            @media screen and (max-width: 250px) {
+                font-size: 1.2rem;
+                color: blue;
+            }
         }
         .secondRow {
             margin-top: 30px;
             .subcol {
                 padding: 20px 10px;
                 color: rgb(8, 249, 153);
+                .quo {
+                    @media screen and (max-width: 400px) {
+                        font-size: 1.2rem;
+                        word-wrap: break-word;
+                    }
+                }
             }
         }
     }

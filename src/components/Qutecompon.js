@@ -27,7 +27,7 @@ console.log(apii.quote);
             <h1 className='text-center headingg'>RaNdOm QuOtEs GeNeRaToR</h1>
             <div className="row secondRow">
                 <div className="col-md-12 subcol">
-                    <h3 className='text-center'>"{apii.quote}"</h3>
+                    <h3 className='text-center quo'>"{apii.quote}"</h3>
                     <h5 className="text-end">{apii.author}</h5>
                 </div>
             </div>
