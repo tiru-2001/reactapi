@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactapi/static/css/main.747942a3.css",
+    "main.js": "/reactapi/static/js/main.7191e927.js",
+    "static/js/787.4f8d7201.chunk.js": "/reactapi/static/js/787.4f8d7201.chunk.js",
+    "index.html": "/reactapi/index.html",
+    "main.747942a3.css.map": "/reactapi/static/css/main.747942a3.css.map",
+    "main.7191e927.js.map": "/reactapi/static/js/main.7191e927.js.map",
+    "787.4f8d7201.chunk.js.map": "/reactapi/static/js/787.4f8d7201.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.747942a3.css",
+    "static/js/main.7191e927.js"
+  ]
+}
